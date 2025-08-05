@@ -11,7 +11,6 @@ header {
     color: rgb(255, 255, 255);
 }
 
-
 .checkboxContainer {
     background-color: rgb(255, 255, 255);
     text-align: center;
@@ -19,12 +18,13 @@ header {
     width: 500px;
     border-radius: 10px;
     margin: 50px auto;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .addinput {
     display: flex;
     justify-content: center;
-    grid-gap: 20px
+    grid-gap: 20px;
 }
 
 .taskInput {
@@ -33,6 +33,7 @@ header {
     border-radius: 10px;
     border: 1px solid rgb(178, 100, 230);
     padding-left: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .addTask {
@@ -40,6 +41,15 @@ header {
     border: 1px solid rgb(178, 100, 230);
     background: linear-gradient(70deg, rgb(62, 4, 224), rgb(138, 74, 241));
     color: aliceblue;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.addTask:hover {
+  background: linear-gradient(70deg, rgb(154, 123, 238), rgb(117, 78, 180));
+}
+
+.addTask:active {
+    background: linear-gradient(70deg, rgb(103, 79, 240), rgb(117, 78, 180));
 }
 
 .button-trash {
@@ -49,18 +59,26 @@ header {
     border-radius: 10px;
     padding: 30px;
     border: 1px solid rgb(178, 100, 230);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button-trash:hover {
+  background-color: rgb(255, 255, 255);
 }
 
 .button-2 {
     float: right;
     border: none;
-    background-color: rgb(235, 227, 252);
+    background-color: rgb(235, 227, 252, 0.0);
 }
 
 footer {
     text-align: center;
     color: rgb(255, 255, 255);
 }
+
+
+
 
 @media screen and (max-width: 600px) {
   .checkboxContainer {
